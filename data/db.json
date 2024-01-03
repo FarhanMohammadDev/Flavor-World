@@ -1,0 +1,103 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Pasta Carbonara",
+      "category": "Main Course",
+      "author": "typicode",
+      "origin": "Origin",
+      "ingredients": [
+        "Spaghetti",
+        "Pancetta",
+        "Eggs ",
+        "Parmesan Cheese",
+        "Black Pepper"
+      ],
+      "steps": [
+        "Boil spaghetti until al dente.",
+        "Fry pancetta until crispy.",
+        "Mix eggs and Parmesan cheese in a bowl.",
+        "Combine cooked spaghetti with pancetta, then add egg mixture.",
+        "Mix well until the sauce thickens.",
+        "Add black pepper to taste and serve."
+      ],
+      "image": "https://res.cloudinary.com/dwimur9lx/image/upload/v1704272258/Pasta_Carbonara_uhp042.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Chocolate Cake",
+      "category": "Dessert",
+      "author": "typicode",
+      "origin": "Origin",
+      "ingredients": [
+        "Flour",
+        "Sugar",
+        "Cocoa Powder",
+        "Baking Powder",
+        "Eggs",
+        "Milk",
+        "Vanilla Extract"
+      ],
+      "steps": [
+        "Preheat oven to 350°F (175°C).",
+        "Mix flour, sugar, cocoa powder, and baking powder in a bowl.",
+        "Add eggs, milk, and vanilla extract to the dry mixture.",
+        "Mix until smooth.",
+        "Pour the batter into a greased cake pan.",
+        "Bake for 30-35 minutes.",
+        "Let it cool before serving."
+      ],
+      "image": "https://res.cloudinary.com/dwimur9lx/image/upload/v1704272150/Chocolate_Cake_w68osl.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Caprese Salad",
+      "category": "Appetizer",
+      "author": "typicode",
+      "origin": "Origin",
+      "ingredients": [
+        "Tomatoes",
+        "Fresh Mozzarella Cheese",
+        "Basil Leaves",
+        "Extra Virgin Olive Oil",
+        "Balsamic Vinegar",
+        "Salt",
+        "Pepper"
+      ],
+      "steps": [
+        "Slice tomatoes and fresh mozzarella into rounds.",
+        "Arrange them on a plate, alternating between tomato and mozzarella slices.",
+        "Tear basil leaves and sprinkle over the tomatoes and mozzarella.",
+        "Drizzle olive oil and balsamic vinegar on top.",
+        "Season with salt and pepper to taste."
+      ],
+      "image": "https://res.cloudinary.com/dwimur9lx/image/upload/v1704278414/Caprese_Salad_flx98r.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Chicken Stir-Fry",
+      "category": "Main Course",
+      "author": "typicode",
+      "origin": "Origin",
+      "ingredients": [
+        "Chicken Breast",
+        "Bell Peppers",
+        "Broccoli",
+        "Soy Sauce",
+        "Garlic",
+        "Ginger",
+        "Vegetable Oil",
+        "Rice"
+      ],
+      "steps": [
+        "Slice chicken breast into strips and marinate with soy sauce, garlic, and ginger.",
+        "Heat vegetable oil in a pan or wok over high heat.",
+        "Stir-fry chicken until cooked through, then set aside.",
+        "Stir-fry bell peppers and broccoli until tender-crisp.",
+        "Add the cooked chicken back to the pan and mix well.",
+        "Serve over steamed rice."
+      ],
+      "image": "https://res.cloudinary.com/dwimur9lx/image/upload/v1704272008/Chicken_Stir-Fry_tgtcmg.jpg"
+    }
+  ]
+}
