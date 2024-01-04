@@ -7,14 +7,23 @@ import axios from 'axios'
 const Recipes = () => {
 
     const [recipes, setRecipes] = useState([]);
+    const [recipesFilter, setRecipesFilter] = useState([]);
+    const [categories, setCategories] = useState([]);
     useEffect(() => {
       axios
         .get("http://localhost:3000/recipes")
-        .then((res) => setRecipes(res.data))
+        .then((res) => {setRecipes(res.data);
+            setRecipesFilter(res.data)})
+        .catch((err) => console.log(err));
+        axios
+        .get("http://localhost:3000/categories")
+        .then((res) => setCategories(res.data))
         .catch((err) => console.log(err));
     }, []);
-    const handleFilterChange=()=>{
-        console.log("jhgfx");
+    const handleFilterChange=(e)=>{
+        const filterData = recipes.filter(recipe => recipe.category == e.target.value);
+        e.target.value === "all" ? setRecipesFilter(recipes) :setRecipesFilter(filterData);
+        
     }
   return (
     <>
@@ -31,17 +40,21 @@ const Recipes = () => {
             onChange={handleFilterChange}
             className="border p-2 rounded"
           >
-            <option value="all">All</option>
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="dinner">Dinner</option>
-            <option value="dessert">Dessert</option>
+            <option value="all">all</option>
+
+            {
+                categories.map((categorie,index)=>(
+                    
+                    <option key={index} value={categorie}>{ categorie}</option>
+                ))
+            }
+
           </select>
         </div>
       <div className="container m-5 mx-auto p-4">
         <div className="flex mx-4">
             {
-                recipes.map((recipe,index) =>(
+                recipesFilter.map((recipe,index) =>(
                     <div key={index} className="w-1/4 px-4">
                         <RecipeCard recipe={recipe}/>
                     </div>
